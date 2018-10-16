@@ -1,0 +1,11 @@
+Following is my requirement:
+
+I should have main identity management app like identity.mysite.com where all of my users are stored.
+
+I have 2 other applications APP1, APP2.
+
+When user request restricted resource on APP1, (s)he should get authenticated by identity.mysite.com
+
+Once authenticated, let user access resources on APP1
+
+Meantime, if user decided to access restricted resources on APP2, (s)he should not be asked to put credentials again.
