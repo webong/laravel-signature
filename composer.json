@@ -14,7 +14,6 @@
     "type": "library",
     "require": {
         "guzzlehttp/guzzle": "^6.3",
-        "#": "exit",
         "league/oauth2-client": "^2.3",
         "laravel/socialite": "^3.1"
     },
@@ -23,6 +22,7 @@
         "mockery/mockery": "^1.2"
     },
     "license": "MIT",
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "Wisdom Anthony",
