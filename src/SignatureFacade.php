@@ -1,9 +1,9 @@
 <?php
-namespace Laravel\Signature;
+namespace Staybusy\Signature;
 
 use Illuminate\Support\Facades\Facade;
 
-class MyPackageFacade extends Facade
+class SignatureFacade extends Facade
 {
     protected static function getFacadeAccessor()
     {

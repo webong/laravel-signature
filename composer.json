@@ -4,10 +4,9 @@
     "keywords": [
         "sso",
         "client",
+        "server",
         "laravel",
         "socialite",
-        "openid",
-        "jwt",
         "session",
         "oauth2"
     ],
@@ -20,7 +19,24 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^7.4",
-        "mockery/mockery": "^1.2"
+        "mockery/mockery": "^1.2",
+        "orchestra/testbench": "^3.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Staybusy\\Signature\\": "src",
+            "Staybusy\\Signature\\Test\\": "tests/"
+        }
+    },  
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Staybusy\\Signature\\ServiceProvider"
+            ],
+            "aliases": {
+                "Signature": "Staybusy\\Signature\\SignatureFacade"
+            }
+        }
     },
     "license": "MIT",
     "minimum-stability": "stable",

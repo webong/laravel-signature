@@ -1,5 +1,5 @@
 <?php
-namespace Laravel\Signature;
+namespace Staybusy\Signature;
 
 use Illuminate\Support\ServiceProvider;
 
